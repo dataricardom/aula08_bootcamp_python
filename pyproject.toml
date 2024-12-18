@@ -7,6 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pandera = "^0.21.1"
+pandas = "^2.2.3"
+pyarrow = "^18.1.0"
 
 
 [build-system]
