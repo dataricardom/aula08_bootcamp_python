@@ -3,11 +3,12 @@
 ## Ricardo Marques
 
 
-O objetivo dessa aula é obter dados de vendas de um arquivo json de dias diferentes e consolida-los em um unico DataFrame usando pandas. Apos isso sera feita uma transformação nestes dados e após feito essa etapa, salva-los em um arquino fo formato desejado. 
+Foi realizado nessa aula a extração de dados de vendas de varios arquivos json de dias diferentes e consolidados em um unico DataFrame usando pandas. Apos o termino da primeira etapa foi criado uma função que faz uma transformação no DataFrame e adiciona uma nova coluna com um KPI obtido deste DataFrame. Por fim foram salvos em um arquino do formato desejado chamando a função especifica de cada um para salvar(csv ou parquet). 
 
-#### Até o momento foram criadas algumas funções:
+#### Foram criadas as seguintes funções:
 
-- Função para extrair dados
+- Função para extrair dados.
+- Função de transformação dos dados.
 - Funções para Salvar em arquivo CSV e Parquet.
 
 
