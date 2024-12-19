@@ -20,12 +20,17 @@ def extrair_dados(path: str) -> pd.DataFrame:
 #Uma função de transformação
 
 
+def calcular_kpi_de_total_de_vendas(df: pd.DataFrame) -> pd.DataFrame:
+    df["Total"] = df["Quantidade"] * df["Venda"]
+    return df
+
+
 #Uma função que da load(salva) em csv ou parquet
 
 
 def salvar_csv(df,path):
     try:    
-        df.to_csv(path, index=False)
+        df.to_csv(path, index=False, encoding = 'utf-8-sig')
         print(f"Arquivo salvo em {path}")
         return True
     except Exception as e:
@@ -50,8 +55,9 @@ def salvar_parquet(df,path):
 if __name__ == "__main__":
     path_pasta = 'data'
     df = extrair_dados(path=path_pasta)
+    print(calcular_kpi_de_total_de_vendas(df))
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    salvarcsv = salvar_parquet(df, f"data/comercio_{timestamp}.parquet")
+   # salvarcsv = salvar_parquet(df, f"data/comercio_{timestamp}.parquet")
 
 
 

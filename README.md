@@ -12,3 +12,10 @@ O objetivo dessa aula é obter dados de vendas de um arquivo json de dias difere
 
 
 
+<p align="center">
+    <img src="pic/KPUUDATA.png" alt="logo" width="300"/>
+</p>
+
+
+
+
